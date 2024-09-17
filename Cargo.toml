@@ -1,0 +1,14 @@
+[package]
+name = "digital"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+wasm-bindgen = "0.2"
+rand = "0.8"
+rand_distr = "0.4"
+cumsum = "1.0.0"
+ndarray = "0.15.3"
+rusty-machine = "0.5.4"
+nalgebra = "0.30"
