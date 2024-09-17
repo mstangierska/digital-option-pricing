@@ -64,7 +64,7 @@ Advantages of the [method](http://www.juergentopper.de/pdfs/fe_wilmott.pdf):
 
 ## Relevant Equations
 
-As described in [\textit{source}], the Finite Element Method (with mass lumping) and Finite Difference centered scheme are equivalent if the mesh is uniform (although they have not been obtained in the same manner).
+As described in Computational Methods for Option Pricing} authored by Banks et. al (2005), the Finite Element Method (with mass lumping) and Finite Difference centered scheme are equivalent if the mesh is uniform (although they have not been obtained in the same manner).
 
 Using the finite difference equation, the equations can be discretized, and the Greeks are calculated. Following this process, the option price is interpolated between nodes at a given time.
 
@@ -72,11 +72,11 @@ If the American option type is chosen, a maximum of the payoff vs. immediate exe
 
 ## Adaptive Meshing
 
-Adaptive meshing can significantly improve computational efficiency and accuracy by varying the resolution in different parts of the lattice. The method is beneficial for options with features that create highly nonlinear value regions [\textit{source}](https://www.sciencedirect.com/science/article/pii/S0304405X99000240) and around the strike price at expiration for vanilla options. **Due to time constraints for this work, the adaptive meshing is not implemented**.
+Adaptive meshing can significantly improve computational efficiency and accuracy by varying the resolution in different parts of the lattice. The method is beneficial for options with features that create highly nonlinear value regions [[source](https://www.sciencedirect.com/science/article/pii/S0304405X99000240)] and around the strike price at expiration for vanilla options. **Due to time constraints for this work, the adaptive meshing is not implemented**.
 
 # Monte Carlo Method
 
-Monte Carlo methods use random evaluations to approximate a quantity of interest. Monte Carlo sampling concerns sampling from distribution Q with limited knowledge about the distribution [\textit{source}](https://faculty.washington.edu/yenchic/19A_stat535/Lec9_MC.pdf).
+Monte Carlo methods use random evaluations to approximate a quantity of interest. Monte Carlo sampling concerns sampling from distribution Q with limited knowledge about the distribution [[source](https://faculty.washington.edu/yenchic/19A_stat535/Lec9_MC.pdf)].
 
 **Advantages**:
 
@@ -109,7 +109,7 @@ The pay-off of the call option is $max(S_T - K,0)$, and for the put option, it i
 
 ### American-type Monte Carlo Algorithm
 
-For American-type observation, the Longstaff-Schwartz algorithm, also known as the Least Squares Monte-Carlo (LSM) algorithm, needs to be implemented, as described in *Valuing American Options by Simulation: A Simple Least-Squares Approach* by Longstaff *et. al.* [\textit{source}](https://people.math.ethz.ch/~hjfurrer/teaching/LongstaffSchwartzAmericanOptionsLeastSquareMonteCarlo.pdf).
+For American-type observation, the Longstaff-Schwartz algorithm, also known as the Least Squares Monte-Carlo (LSM) algorithm, needs to be implemented, as described in *Valuing American Options by Simulation: A Simple Least-Squares Approach* by Longstaff *et. al.* [[source](https://people.math.ethz.ch/~hjfurrer/teaching/LongstaffSchwartzAmericanOptionsLeastSquareMonteCarlo.pdf)].
 
 ## Generating MC Paths
 
@@ -127,7 +127,7 @@ Where:
 - $\sigma$ (assumed constant): Price volatility.
 - $\mu$: Growth rate of asset price.
 
-The advantages of this sampling method include normality and the Markov ('no memory') property. While not done in this work, Geometric Brownian Motion can also be used [\textit{source}](https://www.simtrade.fr/blog_simtrade/brownian-motion-finance/).
+The advantages of this sampling method include normality and the Markov ('no memory') property. While not done in this work, Geometric Brownian Motion can also be used [[source](https://www.simtrade.fr/blog_simtrade/brownian-motion-finance/)].
 
 ## Variants of Monte Carlo Method
 
@@ -135,7 +135,7 @@ Variants of Monte Carlo include the Control Variate Method and Antithetic Variat
 
 # Results
 
-The results were validated against Omni's calculator Black-Scholes Simulation results [\textit{source}](https://www.omnicalculator.com/finance/black-scholes). Good agreement is noted (less than 1% difference), as shown in Table [ref:table] [\textit{source}](https://www.omnicalculator.com/finance/black-scholes).
+The results were validated against Omni's calculator Black-Scholes Simulation results [\textit{source}](https://www.omnicalculator.com/finance/black-scholes). Good agreement is noted (less than 1% difference), as shown in the Table below [[source](https://www.omnicalculator.com/finance/black-scholes)].
 
 | Strike | Spot Price | t  | Volatility | call/put | eu/us | fem/mc | Result of the Simulation | BS Calculator Online |
 |--------|------------|----|------------|----------|-------|--------|--------------------------|----------------------|
