@@ -135,7 +135,7 @@ Variants of Monte Carlo include the Control Variate Method and Antithetic Variat
 
 # Results
 
-The results were validated against Omni's calculator Black-Scholes Simulation results [\textit{source}](https://www.omnicalculator.com/finance/black-scholes). Good agreement is noted (less than 1% difference), as shown in the Table below [[source](https://www.omnicalculator.com/finance/black-scholes)].
+The results were validated against Omni's calculator Black-Scholes Simulation results [[source](https://www.omnicalculator.com/finance/black-scholes)]. Good agreement is noted (less than 1% difference), as shown in the Table below [[source](https://www.omnicalculator.com/finance/black-scholes)].
 
 | Strike | Spot Price | t  | Volatility | call/put | eu/us | fem/mc | Result of the Simulation | BS Calculator Online |
 |--------|------------|----|------------|----------|-------|--------|--------------------------|----------------------|
