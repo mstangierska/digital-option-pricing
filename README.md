@@ -54,7 +54,7 @@ Advantages of the [method](http://www.juergentopper.de/pdfs/fe_wilmott.pdf):
 
 - Solution for the entire domain is computed, as opposed to FDM (finite difference method), which focuses on isolated nodes.
 - Can easily deal with high mesh curvature through, e.g., adaptive meshing.
-- Measures of sensitivity (\textit{Greeks}) can be obtained more exactly with FE.
+- Measures of sensitivity (Greeks) can be obtained more exactly with FE.
 - FE can easily be adapted for the treatment of (semi-) infinite domains.
 
 **Cons**:
