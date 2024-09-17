@@ -50,7 +50,7 @@ $$
 
 # Finite Element (FE) Method
 
-Advantages of the method [\textit{source}](http://www.juergentopper.de/pdfs/fe_wilmott.pdf):
+Advantages of the [method](http://www.juergentopper.de/pdfs/fe_wilmott.pdf):
 
 - Solution for the entire domain is computed, as opposed to FDM (finite difference method), which focuses on isolated nodes.
 - Can easily deal with high mesh curvature through, e.g., adaptive meshing.
